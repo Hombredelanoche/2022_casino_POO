@@ -17,7 +17,7 @@ Autoloader::register();
  * et ce de manière aléatoire ?
  */
 
-function test_can_draw_card()
+function test_can_draw_card(): bool
 {
     $card1 = Common::drawCard();
     $card2 = Common::drawCard();
@@ -31,7 +31,7 @@ function test_can_draw_card()
  * numérique d'une des cartes ? en particulier 10
  * pour Valet, Dame, Roi.
  */
-function test_can_get_card_value($cards)
+function test_can_get_card_value($cards): bool
 {
     // $cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'V', 'D', 'R'];
     $testResult = true;
@@ -79,7 +79,7 @@ function test_complete_bank_hand($tableCards): bool
  * est-ce que le code de blackjack est capable de calculer
  * la somme des 2 cartes tirées au sort ?
  */
-function test_can_calculate_card_sum()
+function test_can_calculate_card_sum(): bool
 {
     return false;
 }
@@ -88,7 +88,7 @@ function test_can_calculate_card_sum()
  * est-ce que le code de blackjack est capable de
  * déterminer qui a gagné la partie ?
  */
-function test_can_guess_winner()
+function test_can_guess_winner(): bool
 {
     return false;
 }

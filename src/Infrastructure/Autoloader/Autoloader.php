@@ -9,7 +9,7 @@ class Autoloader
 {
     public static function register()
     {
-        spl_autoload_register(function ($class) {
+        spl_autoload_register(function ($class): bool {
             $file = str_replace('\\', DIRECTORY_SEPARATOR, $class) . '.php';
             $file = str_replace('Casino', __DIR__ . '/../..', $file);
             if (file_exists($file)) {
@@ -23,4 +23,4 @@ class Autoloader
 
 // Casino/Domain/Games/Blackjack/Blackjack
 // => src/Infrastructure/Autoloader/../../Domain/Games/Blackjack/Blackjack.php
-//=> src/Infrastructure/Autoloader/Infrastructure/src/Domain/Games/Blackjack/Blackjack.php
+//=> src/Infrastructure/Autoloader/Infrastructure/Casino/Domain/Games/Blackjack/Blackjack.php
