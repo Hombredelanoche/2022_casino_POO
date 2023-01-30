@@ -119,14 +119,14 @@ class Roulette
     // $pariPair = $argv[2];
 }
 
-if ($argv[0] === "roulette.php") {
-    $nombreAleatoire = Roulette::generateRandomRouletteNumber();
-    $pariUtilisateur = Roulette::getUserBetInput($argv);
+// if ($argv[0] === "roulette.php") {
+//     $nombreAleatoire = Roulette::generateRandomRouletteNumber();
+//     $pariUtilisateur = Roulette::getUserBetInput($argv);
 
-    Views::printUserArgs($nombreAleatoire, $pariUtilisateur);
+//     Views::printUserArgs($nombreAleatoire, $pariUtilisateur);
 
-    if (!empty($pariUtilisateur)) {
-        $res = Roulette::roulette($nombreAleatoire, $pariUtilisateur);
-        Views::printBetResult($res);
-    }
-}
+//     if (!empty($pariUtilisateur)) {
+//         $res = Roulette::roulette($nombreAleatoire, $pariUtilisateur);
+//         Views::printBetResult($res);
+//     }
+// }

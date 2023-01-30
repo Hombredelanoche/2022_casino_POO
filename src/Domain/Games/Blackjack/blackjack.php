@@ -30,12 +30,12 @@ class Blackjack
 
 
 
-$cardPlayer1 = Common::drawCard($cards);
-$cardPlayer2 = Common::drawCard($cards);
-$cardBank1 = Common::drawCard($cards);
-$cardBank2 = Common::drawCard($cards);
+// $cardPlayer1 = Common::drawCard($cards);
+// $cardPlayer2 = Common::drawCard($cards);
+// $cardBank1 = Common::drawCard($cards);
+// $cardBank2 = Common::drawCard($cards);
 
-echo "Cartes tirées pour le joueur : " . $cardPlayer1 . " + " . $cardPlayer2 . "\n";
+// echo "Cartes tirées pour le joueur : " . $cardPlayer1 . " + " . $cardPlayer2 . "\n";
 
 /**
  * Renvoie la valeur associée à une carte de black jack
@@ -50,14 +50,14 @@ echo "Cartes tirées pour le joueur : " . $cardPlayer1 . " + " . $cardPlayer2 . 
  */
 
 
-$totalPlayer = Blackjack::getCardValue($cardPlayer1) + Blackjack::getCardValue($cardPlayer2);
+// $totalPlayer = Blackjack::getCardValue($cardPlayer1) + Blackjack::getCardValue($cardPlayer2);
 
-echo "Total joueur : " . $totalPlayer . "\n";
+// echo "Total joueur : " . $totalPlayer . "\n";
 
-echo "Cartes tirées pour la banque : " . $cardBank1 . " + " . $cardBank2 . "\n";
+// echo "Cartes tirées pour la banque : " . $cardBank1 . " + " . $cardBank2 . "\n";
 
-$totalBank = Blackjack::getCardValue($cardBank1) + Blackjack::getCardValue($cardBank2);
+// $totalBank = Blackjack::getCardValue($cardBank1) + Blackjack::getCardValue($cardBank2);
 
-echo "Total banque : " . $totalBank . "\n";
+// echo "Total banque : " . $totalBank . "\n";
 
-echo ($totalBank > $totalPlayer) ? "La banque a gagné.\n" : "Le joueur a gagné.\n";
+// echo ($totalBank > $totalPlayer) ? "La banque a gagné.\n" : "Le joueur a gagné.\n";

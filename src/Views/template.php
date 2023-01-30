@@ -5,8 +5,6 @@ namespace Casino\Views;
 
 class Views
 {
-
-
     public static function printBetArgError(): void
     {
         echo "ATTENTION, il manque un argument pour votre pari\n";
