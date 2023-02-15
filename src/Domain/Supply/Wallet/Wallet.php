@@ -5,9 +5,6 @@ declare(strict_types=1);
 namespace Casino\Domain\Supply\Wallet;
 
 use Casino\Domain\Interfaces\InterfaceWallet;
-use Casino\Infrastructure\Autoloader\Autoloader;
-
-Autoloader::register();
 
 class Wallet implements InterfaceWallet
 {
@@ -16,7 +13,7 @@ class Wallet implements InterfaceWallet
     /**
      * Constructeur permettant de récupèrer l'Id du joueur et le solde du compte.
      */
-    public function __construct(private int $playerId, public int $balance)
+    public function __construct(protected int $playerId, public int $balance)
     {
     }
 
@@ -25,9 +22,7 @@ class Wallet implements InterfaceWallet
      */
     public function withDrawAmount($amount): int
     {
-        if ($this->balance - $amount) {
-            return $this->balance;
-        }
+        return $this->balance - $amount;
     }
 
     /**
