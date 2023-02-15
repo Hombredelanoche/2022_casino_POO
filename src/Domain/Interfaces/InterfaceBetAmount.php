@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace Casino\Domain\Interfaces;
 
+
 interface InterfaceBetAmount
 {
-    public function betAmount();
-    public function win();
-    public function hadEnoughMoney();
+    public function betAmount($amount);
+    public function win($amount);
+    public function hadEnoughMoney($amount);
 }

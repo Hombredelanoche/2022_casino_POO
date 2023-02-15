@@ -5,20 +5,21 @@ declare(strict_types=1);
 namespace Casino\Domain\Games\BetAmount;
 
 use Casino\Domain\Interfaces\InterfaceBetAmount;
+use Casino\Domain\Supply\Wallet\Wallet;
 
-class BetAmount implements InterfaceBetAmount
+class BetAmount extends Wallet implements InterfaceBetAmount
 {
-    public $amount;
 
-    public function betAmount($amount);
+    public function betAmount($amount)
     {
-
     }
 
-    public function win(){};
+    public function win($amount)
+    {
+        if()
+    }
 
-    public function hadEnoughMoney(){};
-
-
-
+    public function hadEnoughMoney($amount)
+    {
+    }
 }
