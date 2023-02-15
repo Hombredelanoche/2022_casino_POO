@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Casino\Domain\Supply\Wallet;
 
-use Account;
 use Casino\Domain\Interfaces\InterfaceWallet;
 use Casino\Infrastructure\Autoloader\Autoloader;
 
@@ -15,7 +14,7 @@ class Wallet implements InterfaceWallet
     protected $amount; // Représente une valeur ajouter ou à retirer
 
     /**
-     * Constructeur permettant de récupèrer l'Id du joueur et 
+     * Constructeur permettant de récupèrer l'Id du joueur et le solde du compte.
      */
     public function __construct(private int $playerId, public int $balance)
     {
