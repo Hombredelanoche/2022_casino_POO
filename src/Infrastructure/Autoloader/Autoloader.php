@@ -21,6 +21,8 @@ class Autoloader
     }
 }
 
+Autoloader::register();
+
 // Casino/Domain/Games/Blackjack/Blackjack
 // => src/Infrastructure/Autoloader/../../Domain/Games/Blackjack/Blackjack.php
 //=> src/Infrastructure/Autoloader/Infrastructure/Casino/Domain/Games/Blackjack/Blackjack.php

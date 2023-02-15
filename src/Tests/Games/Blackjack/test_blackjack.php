@@ -10,8 +10,6 @@ use Casino\Domain\Games\Blackjack\Blackjack;
 use Casino\Infrastructure\Autoloader\Autoloader;
 use Casino\Tests\AbstractTests;
 
-Autoloader::register();
-
 class TestBlackjack extends AbstractTests
 {
 
@@ -105,6 +103,3 @@ class TestBlackjack extends AbstractTests
         return false;
     }
 }
-
-$test = new TestBlackjack;
-$test->execute();

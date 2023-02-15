@@ -11,7 +11,6 @@ use Casino\Domain\Games\Roulette\Roulette;
 use Casino\Infrastructure\Autoloader\Autoloader;
 use Casino\Tests\AbstractTests;
 
-Autoloader::register();
 /**
  * Je dois tester que mon application roulette
  * renvoie bien que l'utilisateur a gagné s'il 
@@ -152,7 +151,3 @@ final class TestRoulette extends AbstractTests
         return $testIsOkay;
     }
 }
-
-
-$test = new TestRoulette;
-$test->execute();
