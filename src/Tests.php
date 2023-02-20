@@ -10,7 +10,7 @@ require('./Infrastructure/Autoloader/Autoloader.php');
 use Casino\Tests\AbstractTests;
 use Casino\Tests\Games\Blackjack\TestBlackjack;
 use Casino\Tests\Games\Roulette\TestRoulette;
-
+use Casino\Tests\Games\Supply\TestWallet;
 
 class Tests
 {
@@ -32,4 +32,5 @@ class Tests
 $casioneTest = new Tests;
 $casioneTest->addTester(new TestRoulette);
 $casioneTest->addTester(new TestBlackjack);
+$casioneTest->addTester(new TestWallet);
 $casioneTest->executeAll();

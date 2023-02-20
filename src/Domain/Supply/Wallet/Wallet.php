@@ -4,16 +4,17 @@ declare(strict_types=1);
 
 namespace Casino\Domain\Supply\Wallet;
 
+use Casino\Domain\Interfaces\InterfaceBetAmount;
 use Casino\Domain\Interfaces\InterfaceWallet;
 
-class Wallet implements InterfaceWallet
+class Wallet implements InterfaceWallet, InterfaceBetAmount
 {
     protected $amount; // Représente une valeur ajouter ou à retirer
 
     /**
      * Constructeur permettant de récupèrer l'Id du joueur et le solde du compte.
      */
-    public function __construct(protected int $playerId, public int $balance)
+    public function __construct(protected int $playerId, public int $balance = 0)
     {
     }
 
@@ -49,5 +50,17 @@ class Wallet implements InterfaceWallet
         } else {
             return true;
         }
+    }
+
+    public function betAmount($amount)
+    {
+    }
+
+    public function win($amount)
+    {
+    }
+
+    public function hadEnoughMoney($amount)
+    {
     }
 }

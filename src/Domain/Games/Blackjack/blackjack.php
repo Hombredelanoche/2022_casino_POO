@@ -12,6 +12,9 @@ $cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'V', 'D', 'R'];
 
 class Blackjack
 {
+    protected $betAmount;
+    protected $win;
+
     public static function getCardValue($card): int
     {
         return gettype($card) === "string" ? 10 : $card;

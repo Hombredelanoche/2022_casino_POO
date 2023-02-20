@@ -6,6 +6,6 @@ namespace Casino\Domain\Interfaces;
 
 interface InterfaceWallet
 {
-    public function withDrawAmount($amount): int;
-    public function injectAmount($amount): int;
+    public function withDrawAmount(float $amount): float;
+    public function injectAmount(float $amount): float;
 }

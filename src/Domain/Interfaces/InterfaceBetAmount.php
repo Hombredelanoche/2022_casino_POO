@@ -7,7 +7,7 @@ namespace Casino\Domain\Interfaces;
 
 interface InterfaceBetAmount
 {
-    public function betAmount($amount);
-    public function win($amount);
-    public function hadEnoughMoney($amount);
+    public function betAmount($amount): void;
+    public function win($amount): void;
+    public function hadEnoughMoney($amount): bool;
 }
