@@ -3,6 +3,7 @@
 namespace Casino\Domain\Games\Blackjack;
 
 use Casino\Domain\Common\Common;
+use Casino\Domain\Interfaces\InterfaceBetAmount;
 
 /**
  * Renvoie une carte aléatoire parmi $cards

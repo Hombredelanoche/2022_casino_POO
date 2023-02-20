@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Casino\Domain\Games\Roulette;
 
 use Casino\Domain\Common\Common;
+use Casino\Domain\Interfaces\InterfaceBetAmount;
 use Casino\Views\Views;
 
 class Roulette

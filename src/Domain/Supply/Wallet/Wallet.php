@@ -22,7 +22,12 @@ class Wallet implements InterfaceWallet
      */
     public function withDrawAmount($amount): int
     {
-        return $this->balance - $amount;
+        return $amount > $this->balance ? false : $this->balance - $amount;
+        // if ($amount > $this->balance || $this->balance - $amount) {
+        //     return true;
+        // } else {
+        //     return false;
+        // }
     }
 
     /**
